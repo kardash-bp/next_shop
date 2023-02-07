@@ -1,0 +1,21 @@
+.root {
+  @apply grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2;
+
+  & > * {
+    @apply row-span-1 overflow-hidden;
+  }
+}
+.layoutA {
+  & > *:nth-child(6n + 1) {
+    @apply lg:col-span-2 lg:row-span-2 bg-violet;
+  }
+  & > *:nth-child(6n + 2) {
+    @apply bg-teal-300;
+  }
+  & > *:nth-child(6n + 3) {
+    @apply bg-pink;
+  }
+}
+.layoutB {
+  color: blue;
+}
